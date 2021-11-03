@@ -6,7 +6,7 @@ import UndrawLogin from "vue-undraw/UndrawLogin.vue"
 <div class="flex flex-col items-center justify-center space-y-12 min-h-screen-nonav">
     <div class="flex items-center justify-center overflow-hidden bg-green-100 rounded-lg shadow-2xl">
         
-        <UndrawLogin primary-color='#41B883' class="h-64" />
+        <UndrawLogin primary-color='#41B883' class="h-64 bg-white" />
         <form class="flex flex-col p-4 space-y-4">
             <input type="text" class="p-2 border-2 rounded-lg"
               placeholder="Username" v-model="username" />

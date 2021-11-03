@@ -6,6 +6,7 @@ import News from "./pages/news.vue";
 import Contact from "./pages/contact.vue";
 import NotFound from "./pages/404.vue";
 import Login from "./pages/login.vue";
+import Secret from "./pages/secret.vue";
 
 const routes = [
     {
@@ -32,6 +33,14 @@ const routes = [
         path: "/login",
         name: "Login",
         component: Login,
+    },
+    {
+        path: "/secret",
+        name: "Secret",
+        component: Secret,
+        beforeEnter: (to, from, next) => {
+            next("/");
+        }
     },
     {
         path: "/:pathMatch(.*)*",
