@@ -1,3 +1,11 @@
+<script setup>
+import UndrawNewsletter from "vue-undraw/UndrawNewsletter.vue"
+</script>
+
 <template>
-    <h1>News Page</h1>
+<div class="flex flex-col items-center justify-center space-y-12 min-h-screen-nonav">
+    <h2 class="text-6xl tracking-tighter font-extralight">News Page</h2>
+    <UndrawNewsletter primary-color='#41B883' height='400px' />
+</div>
+    
 </template>

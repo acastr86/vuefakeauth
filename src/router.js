@@ -5,6 +5,7 @@ import About from "./pages/about.vue";
 import News from "./pages/news.vue";
 import Contact from "./pages/contact.vue";
 import NotFound from "./pages/404.vue";
+import Login from "./pages/login.vue";
 
 const routes = [
     {
@@ -28,10 +29,16 @@ const routes = [
         component: Contact,
     },
     {
+        path: "/login",
+        name: "Login",
+        component: Login,
+    },
+    {
         path: "/:pathMatch(.*)*",
         name: "NotFound",
         component: NotFound,
     },
+    
 ];
 
 const router = createRouter({

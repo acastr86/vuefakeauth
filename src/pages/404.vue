@@ -1,3 +1,11 @@
+<script setup>
+import UndrawPageNotFound from "vue-undraw/UndrawPageNotFound.vue"
+</script>
+
 <template>
-    <h1>404 Page Not Found</h1>
+<div class="flex flex-col items-center justify-center space-y-12 min-h-screen-nonav">
+    <h2 class="text-6xl tracking-tighter font-extralight">404 Page Not Found</h2>
+    <UndrawPageNotFound primary-color='#41B883' height='400px' />
+</div>
+    
 </template>
